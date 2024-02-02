@@ -1,0 +1,35 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Portal</title>
+    <link rel="stylesheet" href="voting-page.css">
+</head>
+<body>
+    <h1>Welcome</h1>
+    <form id="actualVote">
+        <label for="voterId">Voter ID:</label>
+        <input type="text" id="voterId" name="voterId" required>
+    
+        <label>
+            A V K
+            <input type="radio" name="options" value="a">
+          </label>
+          <label>
+            B I C
+            <input type="radio" name="options" value="b">
+          </label>
+          <label>
+            C I B
+            <input type="radio" name="options" value="c">
+          </label>
+    
+        <button type="button" onclick="submitVote()">Submit</button>
+      </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./voting-page.js"></script>
+</body>
+</html>

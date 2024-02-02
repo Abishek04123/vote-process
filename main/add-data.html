@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data</title>
+    <link rel="stylesheet" href="add-data.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <form id="voterForm">
+            <label for="voterId">Voter ID:</label>
+            <input type="text" id="voterId" name="voterId" required>
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+        
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        
+            <label for="region">Region:</label>
+            <input type="text" id="region" name="region" required>
+        
+            <label for="votingStatus">Voting Status:</label>
+            <select id="votingStatus" name="votingStatus" required>
+              <option value="not-voted">Not Voted</option>
+              <option value="voted">Voted</option>
+            </select>
+        
+            <br>
+        
+            <button type="button" onclick="submitForm()">Submit</button>
+          </form>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./add-data.js"></script>
+</body>
+
+</html>
