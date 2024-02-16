@@ -1,0 +1,5 @@
+Kindly run the "Voting.html" File.
+
+use email - 'abi@gmail.com" and password - '123456'
+
+Kindly add a new user with the necessary details then proceed to the voting portal.
